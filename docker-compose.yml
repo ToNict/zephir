@@ -27,12 +27,12 @@ services:
       - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/phpgrid:/srv/phpgrid
       - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/config.json:/srv/config.json
 
-  zephir-8.1:
-    container_name: phalcon-zephir-8.1
-    hostname: zephir-81
-    build: docker/8.1
-    working_dir: /srv
-    environment:
-      - "USER=Zephir"
-    volumes:
-      - .:/srv
+  # zephir-8.1:
+  #   container_name: phalcon-zephir-8.1
+  #   hostname: zephir-81
+  #   build: docker/8.1
+  #   working_dir: /srv
+  #   environment:
+  #     - "USER=Zephir"
+  #   volumes:
+  #     - .:/srv
