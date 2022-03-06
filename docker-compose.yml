@@ -12,6 +12,8 @@ services:
       - "USER=Zephir"
     volumes:
       - .:/srv
+      - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/phpgrid:/srv/phpgrid
+      - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/config.json:/srv/config.json
 
   zephir-8.0:
     container_name: phalcon-zephir-8.0
@@ -22,6 +24,8 @@ services:
       - "USER=Zephir"
     volumes:
       - .:/srv
+      - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/phpgrid:/srv/phpgrid
+      - /d/ProjectZephir/php-to-zephir/bin/converted/phpgrid/config.json:/srv/config.json
 
   zephir-8.1:
     container_name: phalcon-zephir-8.1
